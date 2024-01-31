@@ -8,13 +8,19 @@ def create_database_entry(name, age, mrn):
     return new_patient
 
 def print_database(db):
-    for patient in db:
-        print("Name:{}, MRN:{}, Age:{}, List:{}".format(patient[0],patient[2],patient[1],patient[3]))
+    rooms = ["Room A", "Room B", "Room C"]
+    for i, zipped_data in enumerate(zip(db, rooms)):
+        patient, room = zipped_data
+        if i == 1:
+            continue
+        print("{} = Name:{}, MRN:{}, Age:{}, List:{}, Room:{}".format(i, patient[0], patient[2], patient[1], patient[3], room))
 
 def get_patient(db, MRN):
     for patient in db:
         if patient[2] == MRN:
-            return patient
+            answer = patient
+            break
+    return answer
 
 def add_test_to_patient(db,MRN,test_name,test_value):
     patient = get_patient(db,MRN)
