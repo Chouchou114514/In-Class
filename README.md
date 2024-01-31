@@ -1,11 +1,11 @@
 # bme-547-classwork-dward2
 
 ## Author Information
-David Ward
+Junhao Zhong
 
 Duke University
 
-david.a.ward@duke.edu
+jz455@duke.edu
 
 ## Specifications
 * Patient Name
