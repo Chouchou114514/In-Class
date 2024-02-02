@@ -66,6 +66,8 @@ def analyse_total_chol(LDL_value):
     else:
         return "High"
 
+def add(a, b):
+    return a + b
 
 if __name__ == "__main__":        
     interface()
