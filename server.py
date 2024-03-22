@@ -33,5 +33,5 @@ def HDL_analysis_2(HDL_value,patient):
 
 
 if __name__ == '__main__':
-    app.run(port=5003)
+    app.run()
     print("Server is off")
